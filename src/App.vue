@@ -11,10 +11,10 @@
       Verano Azul
     </q-toolbar-title>
   </q-toolbar>
-<div class="q-mx-auto">
+<div class="q-mx-auto" >
   <q-tabs align="left"  >
     <q-route-tab to="/" label="Home" />
-    <q-route-tab to="/Habitaciones" label="Habitaciones" />
+    <q-route-tab to="/Habitaciones" label="Habitaciones"/>
     <q-route-tab to="/Contactos" label="Contactos" />
     <q-route-tab to="/DeportesExtremos" label="Deportes Extremos" />
     <q-route-tab to="/Servicios" label="Servicios" />
@@ -39,7 +39,5 @@
 .q-mx-auto{
   display: flex;
   justify-content: center;
-  text-align: center;
 }
-
 </style>
