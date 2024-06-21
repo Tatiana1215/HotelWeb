@@ -19,16 +19,8 @@
      <strong>Horarios de Atención:</strong> Lunes a Viernes de 9:00am a 5:00pm
 
       </p>
-<!-- 
-      <div class="map-container">
-    <GMapMap
-      :center="center"
-      :zoom="15"
-      style="width: 100%; height: 400px"
-    >
-      <GMapMarker :position="center" />
-    </GMapMap>
-  </div> -->
+<div id="map" style="height: 400px;"></div>
+
     </div>
 <div id="Formulario">
 
@@ -67,8 +59,23 @@
 
 <script setup>
 import { ref } from 'vue';
-// import { GMapMap, GMapMarker } from '@fawmi/vue-google-maps';
-// const center = ref({ lat: -34.397, lng: 150.644 });
+import { onMounted } from 'vue'
+import L from 'leaflet'
+import 'leaflet/dist/leaflet.css'
+
+onMounted(() => {
+  const map = L.map('map').setView([1.2946, 103.8545], 13);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  lang: 'es'
+}).addTo(map);
+
+L.marker([1.2946, 103.8545]).addTo(map)
+  .bindPopup('Hotel Raffles Singapur')
+  .openPopup();
+});
+
 
 </script>
 
@@ -103,13 +110,14 @@ font-size: 20px;
 }
 #DatosPersonales{
   display: flex;
-  /* gap: 60px; */
-  width: 80%;
+  gap: 30%;
+  width: 90%;
   margin-top: 30px;
   justify-content: center;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
 }
 #datos{
 margin-bottom: 20px;
@@ -123,10 +131,5 @@ margin-bottom: 20px;
 #datos textarea{
   width: 80%;
 }
-.contact-page {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-</style>
 
+</style>

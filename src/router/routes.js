@@ -4,6 +4,7 @@ import DeportesExtremos from "../components/PaginaDeportesExtremos.vue"
 import Habitaciones from "../components/PaginaHabitaciones.vue"
 import Servicios from "../components/PaginaServicios.vue"
 import TipoChalet from "../components/Chalet.vue"
+
 import {createRouter, createWebHashHistory} from "vue-router"
 
 

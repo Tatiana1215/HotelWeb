@@ -6,6 +6,7 @@ import '@quasar/extras/material-icons/material-icons.css'
 import 'quasar/src/css/index.sass'
 import { router } from './router/routes'
 // import  VueGoogleMaps from '@fawmi/vue-google-maps';
+import 'leaflet/dist/leaflet.css'
 
 const myApp = createApp(App)
 
