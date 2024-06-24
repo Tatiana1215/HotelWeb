@@ -1,7 +1,5 @@
 <template>
 <div>
-    <!-- <h2>hello4</h2> -->
-
 
 
      <div id="sevicioEspecial">
@@ -26,9 +24,11 @@
       <q-carousel-slide :name="3" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-77?wid=1920" />
       <q-carousel-slide :name="4" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5484-97?wid=1920" />
     </q-carousel>
-    <br>
   </div>
 </div>
+
+
+
 
   <div id="sevicioEspecial">
   <div class="q-pa-md">
@@ -78,7 +78,7 @@
       infinite
       class="Spa"
     >
-      <q-carousel-slide :name="1" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-41?wid=1920" />
+      <q-carousel-slide :name="1" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-41?wid=1920"/>
       <q-carousel-slide :name="2" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5195-36?wid=1920" />
       <q-carousel-slide :name="3" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5195-55?wid=1920" />
       <q-carousel-slide :name="4" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5227-57?wid=1920" />
@@ -96,4 +96,32 @@ let  slide = ref(1)
 let  slide1 = ref(1)
 let  slide2 = ref(1)
 </script>
-<style></style>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.q-pa-md{
+width: 100%;
+/* height: 10vh; */
+}
+.Descripcion{
+width: 70%;
+}
+.Descripcion h5{
+    text-align: center;
+}
+.Descripcion p{
+    text-align: justify;
+}
+
+#sevicioEspecial{
+    display: flex; 
+    width: 80%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+</style>

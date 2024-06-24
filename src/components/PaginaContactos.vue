@@ -24,7 +24,7 @@
     </div>
 <div id="Formulario">
 
-  <h2>Formulario</h2> <br>
+  <h4>Formulario de Contactos</h4> <br>
   <div id="datos">
   <label for="name">Nombre:</label><br>
   <input type="text" name="" label="In" id="">
@@ -49,9 +49,7 @@
   <label for="name">Mensaje:</label><br>
   <textarea id="message" ></textarea>
   </div>
-  <!-- <div class="q-pa-md q-gutter-sm"> -->
     <q-btn push color="primary" label=" Enviar" />
-  <!-- </div> -->
     </div>
   </div>
 </div>
@@ -94,7 +92,7 @@ L.marker([1.2946, 103.8545]).addTo(map)
 #InformacionContacto p{
   margin-top: 20px;
   font-size: 20px;
-  /* margin-bottom: 20px; */
+
   line-height:35px;
 }
 #Formulario{
@@ -103,7 +101,6 @@ L.marker([1.2946, 103.8545]).addTo(map)
 
 #Formulario button{
 width: 20%;
-/* padding:1%; */
 font-size: 20px;
 
 
@@ -124,8 +121,8 @@ margin-bottom: 20px;
 
 
 }
-#datos input{
-  width: 80%;
+#datos input, textarea{
+  width: 100%;
   height: 40px;
 }
 #datos textarea{
@@ -133,3 +130,5 @@ margin-bottom: 20px;
 }
 
 </style>
+
+
