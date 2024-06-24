@@ -17,11 +17,9 @@
      <strong>Teléfono:</strong>  +123456789 <br>
      <strong>Correo Electrónico:</strong> info@hotel.com <br>
      <strong>Horarios de Atención:</strong> Lunes a Viernes de 9:00am a 5:00pm
-
       </p>
-<div id="map" style="height: 400px;"></div>
-
     </div>
+
 <div id="Formulario">
 
   <h4>Formulario de Contactos</h4> <br>
@@ -30,7 +28,7 @@
   <input type="text" name="" label="In" id="">
   </div>
 
-  <div id="datos">
+  <!-- <div id="datos">
   <label for="name">Apellido:</label><br>
   <input type="text" name="" label="In" id=""> 
   </div>
@@ -43,7 +41,7 @@
   <div id="datos">
   <label for="name">Correo Electrónico:</label><br>
   <input type="text" name="" label="In" id="">
- </div>
+ </div> -->
 
   <div id="datos">
   <label for="name">Mensaje:</label><br>
@@ -52,6 +50,9 @@
     <q-btn push color="primary" label=" Enviar" />
     </div>
   </div>
+
+
+  <div id="map" ></div>
 </div>
 </template>
 
@@ -107,7 +108,7 @@ font-size: 20px;
 }
 #DatosPersonales{
   display: flex;
-  gap: 30%;
+  gap: 10%;
   width: 90%;
   margin-top: 30px;
   justify-content: center;
@@ -121,14 +122,19 @@ margin-bottom: 20px;
 
 
 }
-#datos input, textarea{
+#datos input{
   width: 100%;
   height: 40px;
 }
 #datos textarea{
-  width: 80%;
+  width: 100%;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+
+}
 </style>
 
 

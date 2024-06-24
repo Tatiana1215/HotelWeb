@@ -426,7 +426,7 @@
       <div class="q-pa-md">
     <q-carousel
       animated
-      v-model="slide5"
+      v-model="slide6"
       navigation
       infinite
       :autoplay="autoplay"
@@ -507,7 +507,7 @@
       <div class="q-pa-md">
     <q-carousel
       animated
-      v-model="slide5"
+      v-model="slide7"
       navigation
       infinite
       :autoplay="autoplay"
@@ -588,7 +588,7 @@
       <div class="q-pa-md">
     <q-carousel
       animated
-      v-model="slide5"
+      v-model="slide8"
       navigation
       infinite
       :autoplay="autoplay"
@@ -681,6 +681,9 @@ let slide2= ref(1)
 let slide3= ref(1)
 let slide4= ref(1)
 let slide5= ref(1)
+let slide6= ref(1)
+let slide7= ref(1)
+let slide8= ref(1)
 let autoplay= ref(true)
 const dialog = ref(false)
 const dialog1 = ref(false)

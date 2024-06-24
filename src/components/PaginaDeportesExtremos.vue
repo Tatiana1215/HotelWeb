@@ -1,8 +1,11 @@
 <template>
+  <div>
   <div id="contendorDeportes">
+    <div class="Deportes">
   <div class="q-pa-md">
     <q-carousel
       animated
+      control-color="black"
       v-model="slide"
       infinite
       arrows
@@ -12,10 +15,11 @@
       <q-carousel-slide :name="3" img-src="https://s7g10.scene7.com/is/image/ktm/377908_engine:Small?wid=1050&hei=1050&dpr=off" />
       <q-carousel-slide :name="4" img-src="https://s7g10.scene7.com/is/image/ktm/378708_design:Small?wid=1050&hei=1050&dpr=off" />
     </q-carousel>
-    
-    <q-card class="my-card" style="height: 400px;">
+     </div>
+
+    <div class="Descripcion">
       <q-card-section>
-        <div class="text-h6">Motocross
+        <div class="text-h6d">Motocross
         </div>
         <div class="text-subtitle2">
           Experimenta la emoción de recorrer nuestra pista de motocross 
@@ -27,12 +31,11 @@
           <strong>Precio:</strong> Desde $40 por sesión de práctica.
         </div>
       </q-card-section>
-    </q-card>
-
-  
-  </div>
+    </div>
+ </div>
 
 
+ <div class="Deportes">
   <div class="q-pa-md">
     <q-carousel
       animated
@@ -45,11 +48,11 @@
       <q-carousel-slide :name="3" img-src="https://paracaidismonuevoleon.mx/wp-content/uploads/2022/03/14.jpg" />
       <q-carousel-slide :name="4" img-src="https://www.mexicodestinos.com/blog/wp-content/uploads/2017/06/Descenso_en_Paracaidas.jpg" />
     </q-carousel>
+</div>
 
-    <q-card class="my-card" style="height: 400px;">
+<div class="Descripcion">
       <q-card-section>
-        <div class="text-h6">Paracaidismo
-        </div>
+        <div class="text-h6d">Paracaidismo</div>    
         <div class="text-subtitle2">
           Experimenta la emoción de lanzarte al vacío y sentir la libertad absoluta mientras 
           caes en paracaídas. Disfruta de vistas impresionantes desde arriba y vive 
@@ -61,11 +64,10 @@
           <strong>Precio:</strong> Desde $300 por salto..
         </div>
       </q-card-section>
-    </q-card>
+    </div>
   </div>
 
-
-
+  <div class="Deportes">
   <div class="q-pa-md">
     <q-carousel
       animated
@@ -78,11 +80,11 @@
       <q-carousel-slide :name="3" img-src="https://sietelagos.cl/wp-content/uploads/2022/06/DEPORTE-AVENTURA-RAFTING-2.jpg" />
       <q-carousel-slide :name="4" img-src="https://api.suryabintangadventures.com/storage/upload/images/category/6618c76a8bda2.JPG" />
     </q-carousel>
+</div>
 
-    <q-card class="my-card" style="height: 400px;">
+<div class="Descripcion">
       <q-card-section>
-        <div class="text-h6">Raftings
-        </div>
+        <div class="text-h6d">Raftings</div>   
         <div class="text-subtitle2">
           Embárcate en una emocionante aventura en aguas 
           bravas mientras navegas por rápidos emocionantes y disfrutas del paisaje natural. <br> <br>
@@ -93,10 +95,10 @@
           <strong>Precio:</strong> Desde $50 por persona.
         </div>
       </q-card-section>
-    </q-card>
+    </div>
   </div>
 
-
+  <div class="Deportes">
     <div class="q-pa-md">
     <q-carousel
       animated
@@ -109,11 +111,10 @@
       <q-carousel-slide :name="3" img-src="https://blog.howlanders.com/wp-content/uploads/2021/12/escalada-en-hielo.jpg" />
       <q-carousel-slide :name="4" img-src="https://image.jimcdn.com/app/cms/image/transf/none/path/s3e72b73fe8f48274/image/i6d662ebfb5848424/version/1485102667/image.jpg" />
     </q-carousel>
-
-    <q-card class="my-card" style="height: 400px;">
+</div>
+<div class="Descripcion">
       <q-card-section>
-        <div class="text-h6">Alpinismo
-        </div>
+        <div class="text-h6d">Alpinismo </div> 
         <div class="text-subtitle2">
           El alpinismo es una actividad que implica escalar montañas, enfrentándose a 
           terrenos rocosos y glaciares en entornos de alta montaña. 
@@ -126,11 +127,11 @@
           <strong>Precio:</strong> Desde $500 por persona.
         </div>
       </q-card-section>
-    </q-card>
+    </div>
   </div>
   
-    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AF00Hehb7nE?si=aQzADu9Epq4wnzt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-  
+    
+  <div class="Deportes">
      <div class="q-pa-md">
     <q-carousel
       animated
@@ -144,8 +145,23 @@
       <q-carousel-slide :name="4" img-src="https://www.notifresh.com/wp-content/uploads/2020/12/Trineo-de-asfaltoun-deporte-s%C3%B3lo-para-los-m%C3%A1s-atrevidos.jpg" />
     </q-carousel>
   </div>
+  <div class="Descripcion">
+    <q-card-section>
+        <div class="text-h6d">Trineo de Asfalto</div>
+        <div class="text-subtitle2">
+          Experimenta la emoción de recorrer nuestra pista de 
+          trineo de asfalto especialmente diseñada.<br> <br>
+          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa en 
+          trineo de asfalto y habilidades avanzadas de conducción.<br><br>
+          <strong>Requisitos:</strong> Trineo de asfalto en buen estado, 
+          casco, gafas de protección, guantes y equipo de protección completo. <br><br>
+          <strong>Precio:</strong> Desde $30 por sesión de práctica.
+        </div>
+      </q-card-section>
+  </div>
+</div>
 
-
+<div class="Deportes">
      <div class="q-pa-md">
     <q-carousel
       animated
@@ -159,8 +175,24 @@
       <q-carousel-slide :name="4" img-src="https://cdn.getyourguide.com/img/tour/5b689c765788c875.jpeg/145.jpg" />
     </q-carousel>
   </div>
+  <div class="Descripcion">
+    <q-card-section>
+        <div class="text-h6d">Rappel </div>
+        <div class="text-subtitle2">
+          Experimenta la emoción de descender por nuestras paredes especialmente 
+          diseñadas para rappel.<br> <br>
+          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa 
+          en rappel y habilidades avanzadas de escalada.<br><br>
+          <strong>Requisitos:</strong> Arnés de seguridad, casco, guantes, cuerda de rappel en 
+          buen estado, y equipo de protección completo. <br><br>
+          <strong>Precio:</strong> Desde $50 por sesión de práctica.
+        </div>
+      </q-card-section>
+  </div>
+</div>
 
 
+<div class="Deportes">
      <div class="q-pa-md">
     <q-carousel
       animated
@@ -174,8 +206,22 @@
       <q-carousel-slide :name="4" img-src="https://www.ciclismo.it/files/articoli/2/9/8/29818/B_d15.jpeg" />
     </q-carousel>
   </div>
+  <div class="Descripcion">
+    <q-card-section>
+        <div class="text-h6d">Ciclismo de Montaña </div>
+        <div class="text-subtitle2">Experimenta la emoción de recorrer nuestros senderos 
+          de montaña especialmente diseñados para el ciclismo.<br> <br>
+          <strong>Nivel de Dificultad:</strong> Alto. Se requiere experiencia previa en ciclismo de 
+          montaña y habilidades avanzadas de conducción.<br><br>
+          <strong>Requisitos:</strong> Bicicleta de montaña en buen estado, casco, 
+          gafas de protección, guantes, rodilleras y equipo de protección completo. <br><br>
+          <strong>Precio:</strong> Desde $35 por sesión de práctica.
+          </div>
+      </q-card-section>
+  </div>
+</div>
 
-
+<div class="Deportes">
      <div class="q-pa-md">
     <q-carousel
       animated
@@ -189,7 +235,23 @@
       <q-carousel-slide :name="4" img-src="https://cdn.sanity.io/images/m2koza6e/production/6fc8d9e72c3bb19b5160e0a1f07e9cbd4e7137d9-1160x1239.jpg?w=1160&h=1239&auto=format" />
     </q-carousel>
   </div>
+  <div class="Descripcion">
+    <q-card-section>
+        <div class="text-h6d">Base Salto</div>
+        <div class="text-subtitle2"> Experimenta la emoción de lanzarte desde cualquier sitio con nuestra experiencia de BASE salto.<br> <br>
+          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa en BASE salto y 
+          habilidades avanzadas de paracaidismo.<br><br>
+          <strong>Requisitos:</strong> Paracaídas en buen estado, traje de vuelo (si aplica), 
+          casco, altímetro, gafas de protección y equipo de protección completo. <br><br>
+          <strong>Precio:</strong> Desde $120 por salto.
+          </div>
+        
+      </q-card-section>
   </div>
+   </div>
+  </div>
+</div>
+
 </template>
 
 <script setup>
@@ -204,16 +266,42 @@ let slide6= ref(1)
 let slide7= ref(1)
 let slide8= ref(1)
 let slide9= ref(1)
-// const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+let expanded= ref(false)
+const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 </script>
-
 <style >
 #contendorDeportes{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(1,1fr);
+  margin-top: 30px;
 }
-.my-card{
+/* .my-card{
     width: 100%;
-}
+  max-width: 900px;
+  height:10px;
+} */
+.Deportes{
+  display: flex;
+  width: 90%;
+  border:1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 5px ;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
+}
+ img{
+  width: 100%;
+}
+.Descripcion{
+  width: 100%;
+}
+.text-h6d{
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 </style>

@@ -1,7 +1,36 @@
 <template>
 <div>
-
-
+  <div class="q-pa-md">
+    <q-carousel
+      arrows
+      animated
+      color ="black"
+      v-model="slide3"
+      height="550px"
+    >
+      <q-carousel-slide name="first" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5484-73?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="second" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5553-53?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="third" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-54?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="cuatro" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-78?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="cinco" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5227-46?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="seis" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-37?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="siete" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5484-64?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="ocho" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5195-48?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="nueve" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5484-96?wid=1920">
+      </q-carousel-slide>
+      <q-carousel-slide name="diez" img-src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5629-45?wid=1920">
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+  
      <div id="sevicioEspecial">
     <div  class="Descripcion">
  <h5>Descubre la Armonía Interior Donde el Cuerpo y el Espíritu se Encuentran</h5>
@@ -95,6 +124,7 @@ import { ref } from 'vue'
 let  slide = ref(1)
 let  slide1 = ref(1)
 let  slide2 = ref(1)
+let  slide3 = ref("first")
 </script>
 <style>
 
