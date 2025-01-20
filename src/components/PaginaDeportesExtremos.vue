@@ -1,307 +1,245 @@
 <template>
   <div>
-  <div id="contendorDeportes">
-    <div class="Deportes">
-  <div class="q-pa-md">
-    <q-carousel
-      animated
-      control-color="black"
-      v-model="slide"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://i1.wp.com/hotbook.com.mx/wp-content/uploads/2014/10/hotbook-126.jpg?w=717&ssl=1" />
-      <q-carousel-slide :name="2" img-src="https://s7g10.scene7.com/is/image/ktm/r2r-3:Small?wid=1050&hei=1050&dpr=off" />
-      <q-carousel-slide :name="3" img-src="https://s7g10.scene7.com/is/image/ktm/377908_engine:Small?wid=1050&hei=1050&dpr=off" />
-      <q-carousel-slide :name="4" img-src="https://s7g10.scene7.com/is/image/ktm/378708_design:Small?wid=1050&hei=1050&dpr=off" />
-    </q-carousel>
-     </div>
-
-    <div class="Descripcion">
-      <q-card-section>
-        <div class="text-h6d">Motocross
+    <q-card class="my-card">
+      <q-img src="https://th.bing.com/th/id/OIG4.MKvzpEE3wPD.tZt26trg?w=1024&h=1024&rs=1&pid=ImgDetMain">
+        <div class="absolute-bottom text-subtitle2 text-center">
+          Deportes Extremos
+        <!-- <h1 style="font-family: cursive;">Deportes Extremos</h1> -->
         </div>
-        <div class="text-subtitle2">
-          Experimenta la emoción de recorrer nuestra pista de motocross 
-          especialmente diseñada. <br> <br>
-          <strong>Nivel de Dificultad:</strong> Alto. Se requiere experiencia 
-          previa en motocross y habilidades avanzadas de conducción. <br><br>
-          <strong>Requisitos:</strong> Moto de motocross en buen estado,
-           casco, gafas de protección, botas de motocross, guantes y equipo de protección completo. <br><br>
-          <strong>Precio:</strong> Desde $40 por sesión de práctica.
-        </div>
-      </q-card-section>
-    </div>
- </div>
+      </q-img>
+    </q-card>
 
+   
+   
+    <div id="contendorDeportes">
 
- <div class="Deportes">
-  <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide1"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/a8/57/cd/skydive-espana.jpg?w=1000&h=800&s=1" />
-      <q-carousel-slide :name="2" img-src="https://media-cdn.tripadvisor.com/media/photo-s/06/a8/55/08/skydive-espana.jpg" />
-      <q-carousel-slide :name="3" img-src="https://paracaidismonuevoleon.mx/wp-content/uploads/2022/03/14.jpg" />
-      <q-carousel-slide :name="4" img-src="https://www.mexicodestinos.com/blog/wp-content/uploads/2017/06/Descenso_en_Paracaidas.jpg" />
-    </q-carousel>
-</div>
-
-<div class="Descripcion">
-      <q-card-section>
-        <div class="text-h6d">Paracaidismo</div>    
-        <div class="text-subtitle2">
-          Experimenta la emoción de lanzarte al vacío y sentir la libertad absoluta mientras 
-          caes en paracaídas. Disfruta de vistas impresionantes desde arriba y vive 
-          una experiencia inolvidable. <br> <br>
-          <strong>Nivel de Dificultad:</strong> Moderado. No se requiere experiencia previa, 
-          pero se necesita coraje y disposición para la aventura. <br><br>
-          <strong>Requisitos:</strong> Participantes deben cumplir con los requisitos 
-          de peso y salud establecidos por nuestro equipo de paracaidismo. <br><br>
-          <strong>Precio:</strong> Desde $300 por salto..
-        </div>
-      </q-card-section>
-    </div>
-  </div>
-
-  <div class="Deportes">
-  <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide2"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Rio_Salvaje_Jalcomulco.jpeg/1200px-Rio_Salvaje_Jalcomulco.jpeg" />
-      <q-carousel-slide :name="2" img-src="https://entremontanas.com/wp-content/uploads/Rafting_brazil-1024x768-1.jpg" />
-      <q-carousel-slide :name="3" img-src="https://sietelagos.cl/wp-content/uploads/2022/06/DEPORTE-AVENTURA-RAFTING-2.jpg" />
-      <q-carousel-slide :name="4" img-src="https://api.suryabintangadventures.com/storage/upload/images/category/6618c76a8bda2.JPG" />
-    </q-carousel>
-</div>
-
-<div class="Descripcion">
-      <q-card-section>
-        <div class="text-h6d">Raftings</div>   
-        <div class="text-subtitle2">
-          Embárcate en una emocionante aventura en aguas 
-          bravas mientras navegas por rápidos emocionantes y disfrutas del paisaje natural. <br> <br>
-          <strong>Nivel de Dificultad:</strong> Alto. Se requiere cierto nivel de condición física 
-          y disposición para enfrentar desafíos en el agua. <br><br>
-          <strong>Requisitos:</strong> Traje de neopreno, chaleco salvavidas y 
-          equipo de rafting proporcionado por nuestro equipo. <br><br>
-          <strong>Precio:</strong> Desde $50 por persona.
-        </div>
-      </q-card-section>
-    </div>
-  </div>
-
-  <div class="Deportes">
-    <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide3"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://ich.unesco.org/img/photo/thumb/12629-BIG.jpg" />
-      <q-carousel-slide :name="2" img-src="https://www.revistaoxigeno.es/uploads/s1/23/91/10/0/article-peligros-invernales-5873582b651cb.jpeg" />
-      <q-carousel-slide :name="3" img-src="https://blog.howlanders.com/wp-content/uploads/2021/12/escalada-en-hielo.jpg" />
-      <q-carousel-slide :name="4" img-src="https://image.jimcdn.com/app/cms/image/transf/none/path/s3e72b73fe8f48274/image/i6d662ebfb5848424/version/1485102667/image.jpg" />
-    </q-carousel>
-</div>
-<div class="Descripcion">
-      <q-card-section>
-        <div class="text-h6d">Alpinismo </div> 
-        <div class="text-subtitle2">
-          El alpinismo es una actividad que implica escalar montañas, enfrentándose a 
-          terrenos rocosos y glaciares en entornos de alta montaña. 
-          Requiere habilidades técnicas, resistencia física y mental, así como un profundo 
-          respeto por la montaña y el medio ambiente. <br> <br>
-          <strong>Nivel de Dificultad:</strong>Se clasifica en diferentes niveles de dificultad 
-          según la pendiente, la altura y la complejidad de la ruta.<br><br>
-          <strong>Requisitos:</strong> Experiencia en escalada, buen estado físico, 
-          conocimientos de seguridad en montaña y equipo adecuado. <br><br>
-          <strong>Precio:</strong> Desde $500 por persona.
-        </div>
-      </q-card-section>
-    </div>
-  </div>
-  
-    
-  <div class="Deportes">
-     <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide4"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://simplementedeportes.wordpress.com/wp-content/uploads/2014/10/7-trineo-de-asfalto-e1400700234266.jpg" />
-      <q-carousel-slide :name="2" img-src="https://www.notifresh.com/wp-content/uploads/2020/12/180096c4764a60301d6145b3b9ace5ef.jpg" />
-      <q-carousel-slide :name="3" img-src="https://blog.marti.mx/wp-content/uploads/2023/03/street-luge-jpg.webp" />
-      <q-carousel-slide :name="4" img-src="https://www.notifresh.com/wp-content/uploads/2020/12/Trineo-de-asfaltoun-deporte-s%C3%B3lo-para-los-m%C3%A1s-atrevidos.jpg" />
-    </q-carousel>
-  </div>
-  <div class="Descripcion">
-    <q-card-section>
-        <div class="text-h6d">Trineo de Asfalto</div>
-        <div class="text-subtitle2">
-          Experimenta la emoción de recorrer nuestra pista de 
-          trineo de asfalto especialmente diseñada.<br> <br>
-          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa en 
-          trineo de asfalto y habilidades avanzadas de conducción.<br><br>
-          <strong>Requisitos:</strong> Trineo de asfalto en buen estado, 
-          casco, gafas de protección, guantes y equipo de protección completo. <br><br>
-          <strong>Precio:</strong> Desde $30 por sesión de práctica.
-        </div>
-      </q-card-section>
-  </div>
-</div>
-
-<div class="Deportes">
-     <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide5"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://cdn.getyourguide.com/img/tour/e6d3ceee8da987a5.jpeg/145.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.getyourguide.com/img/tour/aaa8b3b7be252ff9.jpeg/145.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.getyourguide.com/img/tour/73fc3abe81b028a3.jpeg/145.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.getyourguide.com/img/tour/5b689c765788c875.jpeg/145.jpg" />
-    </q-carousel>
-  </div>
-  <div class="Descripcion">
-    <q-card-section>
-        <div class="text-h6d">Rappel </div>
-        <div class="text-subtitle2">
-          Experimenta la emoción de descender por nuestras paredes especialmente 
-          diseñadas para rappel.<br> <br>
-          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa 
-          en rappel y habilidades avanzadas de escalada.<br><br>
-          <strong>Requisitos:</strong> Arnés de seguridad, casco, guantes, cuerda de rappel en 
-          buen estado, y equipo de protección completo. <br><br>
-          <strong>Precio:</strong> Desde $50 por sesión de práctica.
-        </div>
-      </q-card-section>
-  </div>
-</div>
-
-
-<div class="Deportes">
-     <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide6"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://media.istockphoto.com/id/960156448/es/foto/ciclista-de-atl%C3%A9tico-sportsman-en-ropa-deportiva-profesional-y-casco-volando-en-el-aire-con-su.webp?b=1&s=170667a&w=0&k=20&c=ryurLOrinG98kgYbiDb9QHXSR1AiIBT2LItIdhJbp58=" />
-      <q-carousel-slide :name="2" img-src="https://mejorconsalud.as.com/wp-content/uploads/2018/08/ciclismo-monta%C3%B1a-bici.jpg" />
-      <q-carousel-slide :name="3" img-src="https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2013/12/03/1331622865306_2/joscha-forstreuter-mantiene-el-invierno-a-raya" />
-      <q-carousel-slide :name="4" img-src="https://www.ciclismo.it/files/articoli/2/9/8/29818/B_d15.jpeg" />
-    </q-carousel>
-  </div>
-  <div class="Descripcion">
-    <q-card-section>
-        <div class="text-h6d">Ciclismo de Montaña </div>
-        <div class="text-subtitle2">Experimenta la emoción de recorrer nuestros senderos 
-          de montaña especialmente diseñados para el ciclismo.<br> <br>
-          <strong>Nivel de Dificultad:</strong> Alto. Se requiere experiencia previa en ciclismo de 
-          montaña y habilidades avanzadas de conducción.<br><br>
-          <strong>Requisitos:</strong> Bicicleta de montaña en buen estado, casco, 
-          gafas de protección, guantes, rodilleras y equipo de protección completo. <br><br>
-          <strong>Precio:</strong> Desde $35 por sesión de práctica.
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://bouyahwatersports.com/wp-content/uploads/2019/05/parasailing-in-star-island.jpg"
+              alt="Imagen de la tarjeta" style="width: 100%; height: 100%; object-fit: cover;">
           </div>
-      </q-card-section>
-  </div>
-</div>
-
-<div class="Deportes">
-     <div class="q-pa-md">
-    <q-carousel
-      animated
-      v-model="slide7"
-      infinite
-      arrows
-    >
-      <q-carousel-slide :name="1" img-src="https://i1.wp.com/hotbook.com.mx/wp-content/uploads/2014/10/hotbook-108.jpg?w=714&ssl=1" />
-      <q-carousel-slide :name="2" img-src="https://citynews-leccotoday.stgy.ovh/~media/horizontal-mid/13552244059250/base-jumping.jpeg" />
-      <q-carousel-slide :name="3" img-src="https://deportesextremosyeah.wordpress.com/wp-content/uploads/2015/07/wing.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.sanity.io/images/m2koza6e/production/6fc8d9e72c3bb19b5160e0a1f07e9cbd4e7137d9-1160x1239.jpg?w=1160&h=1239&auto=format" />
-    </q-carousel>
-  </div>
-  <div class="Descripcion">
-    <q-card-section>
-        <div class="text-h6d">Base Salto</div>
-        <div class="text-subtitle2"> Experimenta la emoción de lanzarte desde cualquier sitio con nuestra experiencia de BASE salto.<br> <br>
-          <strong>Nivel de Dificultad:</strong>Alto. Se requiere experiencia previa en BASE salto y 
-          habilidades avanzadas de paracaidismo.<br><br>
-          <strong>Requisitos:</strong> Paracaídas en buen estado, traje de vuelo (si aplica), 
-          casco, altímetro, gafas de protección y equipo de protección completo. <br><br>
-          <strong>Precio:</strong> Desde $120 por salto.
+          <div class="card-back">
+            <h2>Parasailing</h2><br>
+            <p>
+              Experimenta la emoción de volar sobre el agua con nuestra experiencia de parasailing. <br>
+              <strong> Nivel de Dificultad: </strong>Moderado. No se requiere experiencia previa, pero es importante
+              seguir las
+              instrucciones de seguridad. <br>
+              <strong>Requisitos:</strong> Chaleco salvavidas, arnés de seguridad, casco, y gafas de protección. <br>
+              <strong>Precio:</strong> Desde $62 por vuelo. <br>
+            </p>
           </div>
-        
-      </q-card-section>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="https://www.dresseldivers.com/wp-content/uploads/Divers-Decompression-descompresio%CC%81n-en-el-buceo-5-1024x829.jpg"
+              alt="Imagen de la tarjeta" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-back">
+            <h2>Buceo</h2><br>
+            <p>
+              Sumérgete en una aventura submarina con nuestra experiencia de buceo.<br>
+              <strong> Nivel de Dificultad: </strong>Moderado a Alto. Dependiendo del tipo de buceo, puede
+              requerir experiencia previa y certificación. <br>
+              <strong>Requisitos:</strong> Traje de buceo, tanque de aire, regulador, máscara, aletas, chaleco
+              compensador
+              de flotabilidad, y equipo de seguridad adicional. <br>
+              <strong>Precio:</strong> Desde $150 por inmersión. <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://www.naish.com/cdn/shop/collections/windsurf-foils-naish-com.jpg?v=1707912741"
+              alt="Imagen de la tarjeta" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-back">
+            <h2>Windsurf</h2><br>
+            <p>
+              Experimenta la emoción de deslizarte sobre el agua con nuestra experiencia de windsurf.<br>
+              <strong> Nivel de Dificultad: </strong> No se requiere experiencia previa, pero es útil tener
+              conocimientos básicos de navegación y equilibrio. <br>
+              <strong>Requisitos:</strong> Tabla de windsurf, vela, arnés, chaleco salvavidas, casco, y gafas de
+              protección.<br>
+              <strong>Precio:</strong> Desde $80 por sesión. <br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://holidayexcursion.com/wp-content/uploads/2023/12/Alanya-Flyboard-holiday-excursion.jpg"
+              alt="Imagen de la tarjeta" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-back">
+            <h2>Fly Board</h2><br>
+            <p>
+              Experimenta la emoción de deslizarte sobre el agua con nuestra experiencia de windsurf.<br>
+              <strong> Nivel de Dificultad: </strong> No se requiere experiencia previa, pero es útil tener
+              conocimientos básicos de navegación y equilibrio. <br>
+              <strong>Requisitos:</strong> Tabla de windsurf, vela, arnés, chaleco salvavidas, casco, y gafas de
+              protección.<br>
+              <strong>Precio:</strong> Desde $80 por sesión. <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://fishmasters.com/wp-content/uploads/2022/02/girl-on-a-kayak.jpg" alt="Imagen de la tarjeta"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-back">
+            <h2>Kayak</h2><br>
+            <p>
+              Disfruta de la aventura de remar en aguas abiertas con nuestra experiencia de kayak en el mar.<br>
+              <strong> Nivel de Dificultad: </strong> Moderado a Alto. Dependiendo de las condiciones del mar,
+              puede requerir experiencia previa y habilidades de navegación. <br>
+              <strong>Requisitos:</strong>Chaleco salvavidas, remo, casco, traje de neopreno
+              (si aplica), y equipo de seguridad adicional.<br>
+              <strong>Precio:</strong> Desde $70 por sesión.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="https://img.freepik.com/fotos-premium/hombre-vuela-paracaidas-palabras-palabra-parte-inferior_865967-241766.jpg" alt="Imagen de la tarjeta"
+              style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="card-back">
+            <h2>Paracaidismo</h2><br>
+            <p>
+              Experimenta la emoción de lanzarte desde el cielo con nuestra experiencia de paracaidismo.<br>
+              <strong> Nivel de Dificultad: </strong> Alto. Se requiere experiencia previa en paracaidismo y habilidades avanzadas de salto.<br>
+              <strong>Requisitos:</strong>Paracaídas en buen estado, traje de vuelo (si aplica), casco, 
+              altímetro, gafas de protección y equipo de protección completo.<br>
+              <strong>Precio:</strong> Desde $120 por salto.<br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-   </div>
-  </div>
-</div>
 
 </template>
 
 <script setup>
 import { ref } from 'vue'
-let slide= ref(1)
-let slide1= ref(1)
-let slide2= ref(1)
-let slide3= ref(1)
-let slide4= ref(1)
-let slide5= ref(1)
-let slide6= ref(1)
-let slide7= ref(1)
-let slide8= ref(1)
-let slide9= ref(1)
-let expanded= ref(false)
-const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
 </script>
-<style >
-#contendorDeportes{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  margin-top: 30px;
+<style>
+
+.inicioDeportes img{
+  width: 100%;
+  height: 600px;
 }
-/* .my-card{
-    width: 100%;
-  max-width: 900px;
-  height:10px;
-} */
-.Deportes{
-  display: flex;
+#contendorDeportes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   width: 90%;
-  border:1px solid black;
-  border-radius: 20px;
-  box-shadow: 0 0 10px 5px ;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+}
 
+.card {
+  width:100%;
+  height: 590px;
+  perspective: 1000px;
 }
- img{
+
+.card-inner {
   width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  /* Aplica una transición suave de 0.6 segundos a las transformaciones.*/
+  transform-style: preserve-3d;
+  /* Mantiene el estilo 3*/
+  position: relative;
 }
-.Descripcion{
+
+
+
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  /*Rota el contenedor interno 180 grados en el eje Y cuando el cursor se sobrepone a la tarjeta, creando el efecto de volteo.*/
+}
+
+.card-front,
+.card-back {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  /*Posiciona los lados frontal y trasero absolutamente dentro del contenedor interno.*/
+  backface-visibility: hidden;
+  /*Oculta la parte trasera de los elementos cuando se rotan. */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
 }
-.text-h6d{
-  font-weight: 900;
-  font-size: 30px;
-  margin-bottom: 20px;
+
+
+.card-back {
+  background-color: #2848a7;
+  transform: rotatey(180deg);
+  /* Rota la parte trasera 180 grados en el eje Y para que esté oculta por defecto.*/
+  padding: 10%;
 }
+.card-back h2, p{
+  font-family: cursive;
+}
+@media (max-width:1500px) and (min-width:992px){
+  #contendorDeportes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media ( max-width:800px) and (min-width:700px){
+  #contendorDeportes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+  width:100%;
+  height: 450px;
+  perspective: 1000px;
+}
+}
+@media (max-width:500px){
+  #contendorDeportes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+  width:100%;
+  height: 470px;
+  perspective: 1000px;
+}
+.card-back h2 {
+  font-size: 45px;
+}
+.card-back p{
+  font-size: 15px;
+}
+}
+
 </style>

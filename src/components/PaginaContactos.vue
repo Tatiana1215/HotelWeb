@@ -1,9 +1,9 @@
 <template>
 <div>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="q-pa-md items-start q-gutter-md">
   <q-card class="my-card">
-      <q-img src="https://m.ahstatic.com/is/image/accorhotels/aja_p_5227-41?qlt=82&wid=1920&ts=1701465409526&dpr=off">
-        <div class="text-h2 absolute-bottom text-right">
+      <q-img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/ff/9a/24/aquamare-beach-hotel.jpg?w=1200&h=-1&s=1">
+        <div class="text-h2 absolute-bottom text-right" style="font-family: cursive;">
          Contactos
         </div>
       </q-img>
@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 import { onMounted } from 'vue'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -98,13 +98,16 @@ L.marker([1.2946, 103.8545]).addTo(map)
 }
 #Formulario{
   width: 100%;
+  font-family: cursive;
+  font-weight: 900;
 }
 
 #Formulario button{
-width: 20%;
+width: 30%;
 font-size: 20px;
-
-
+}
+h4 {
+  font-family: cursive;
 }
 #DatosPersonales{
   display: flex;
@@ -134,6 +137,11 @@ margin-bottom: 20px;
   height: 400px;
   width: 100%;
 
+}
+@media (max-width:500px){
+  #DatosPersonales{
+    flex-wrap: wrap;
+  }
 }
 </style>
 
